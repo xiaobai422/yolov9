@@ -21,13 +21,18 @@ class Yolov9:
             opt.workers = 8
             opt.device = device
             opt.batch = 8
-            opt.img = 320
+            opt.img = 64
             opt.cfg = 'models/detect/yolov9-c.yaml'
             opt.weights = ''
             opt.name = 'yolov9-c'
             opt.hyp = 'hyp.scratch-high.yaml'
             opt.min_items = 0
             opt.close_mosaic = 15
+
+            vars_ = vars(opt)
+            
+            for key in vars_.keys():
+                print(key, vars_[key])
 
             train_dual.main(opt)
 
