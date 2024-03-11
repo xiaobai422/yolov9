@@ -20,11 +20,11 @@ class Yolov9:
 
             opt.workers = 8
             opt.device = device
-            opt.batch_size = 8
+            opt.batch_size = 16
             opt.imgsz = 640
-            opt.cfg = 'models/detect/yolov9-c.yaml'
+            opt.cfg = 'models/detect/yolov9-s.yaml'
             opt.weights = ''
-            opt.name = 'yolov9-c'
+            opt.name = 'yolov9-s'
             opt.hyp = 'hyp.scratch-high.yaml'
             opt.min_items = 0
             opt.close_mosaic = 15
