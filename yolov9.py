@@ -29,11 +29,6 @@ class Yolov9:
             opt.min_items = 0
             opt.close_mosaic = 15
 
-            vars_ = vars(opt)
-            
-            for key in vars_.keys():
-                print(key, vars_[key])
-
             train_dual.main(opt)
 
         elif mode in ['gelan']:
