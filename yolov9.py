@@ -20,7 +20,7 @@ class Yolov9:
 
             opt.workers = 8
             opt.device = device
-            opt.batch = 16
+            opt.batch = 8
             opt.img = 640
             opt.cfg = 'models/detect/yolov9-c.yaml'
             opt.weights = ''
