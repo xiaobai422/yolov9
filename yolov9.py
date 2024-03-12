@@ -22,7 +22,7 @@ class Yolov9:
             opt.device = device
             opt.batch_size = 16
             opt.imgsz = 640
-            opt.cfg = 'models/detect/yolov9-s.yaml'
+            opt.cfg = 'models/detect/yolov9.yaml'
             opt.weights = ''
             opt.name = 'yolov9-s'
             opt.hyp = 'hyp.scratch-high.yaml'
