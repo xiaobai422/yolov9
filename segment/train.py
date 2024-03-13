@@ -488,7 +488,9 @@ def parse_opt(known=False):
     parser.add_argument('--mask-ratio', type=int, default=4, help='Downsample the truth masks to saving memory')
     parser.add_argument('--no-overlap', action='store_true', help='Overlap masks train faster at slightly less mAP')
 
-    return parser.parse_known_args()
+    args, unknown = parser.parse_known_args()
+
+    return args
 
 
 def main(opt, callbacks=Callbacks()):
