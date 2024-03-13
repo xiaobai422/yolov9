@@ -476,7 +476,9 @@ def parse_opt(known=False):
     parser.add_argument('--bbox_interval', type=int, default=-1, help='Set bounding-box image logging interval')
     parser.add_argument('--artifact_alias', type=str, default='latest', help='Version of dataset artifact to use')
 
-    return parser.parse_known_args()
+    args, unknown = parser.parse_known_args()
+
+    return args
 
 
 def main(opt, callbacks=Callbacks()):
