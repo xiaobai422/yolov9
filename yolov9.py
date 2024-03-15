@@ -35,7 +35,7 @@ class Yolov9ObjectDetection(Yolov9):
 
     def train(self, **kwargs):
 
-        mode = kwargs.get('mode', 'gelan')
+        mode = kwargs.get('mode', 'dual')
         data = kwargs.get('data', None)
 
         assert data is not None
